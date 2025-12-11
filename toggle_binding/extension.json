@@ -1,0 +1,43 @@
+{
+  "name": "toggle_binding",
+  "version": "1.0",
+  "command_name": "toggle_binding",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/toggle_binding",
+  "help": "Toggle an adapter binding (enable/disable). (ex: toggle_binding <adapter ID> <binding ID> disable)",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "toggle_binding.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "toggle_binding.x86.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "adapterId",
+      "desc": "ID of the adapter",
+      "type": "string",
+      "optional": false
+    },
+    {
+      "name": "bindingId",
+      "desc": "ID of the binding",
+      "type": "string",
+      "optional": false
+    },
+    {
+      "name": "action",
+      "desc": "Action to perform: enable or disable",
+      "type": "string",
+      "optional": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "enum_adapters",
+  "version": "1.0",
+  "command_name": "enum_adapters",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/enum_adapters",
+  "help": "Prints out adapter and adapter binding information",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "enum_adapters.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "enum_adapters.x86.o"
+    }
+  ],
+  "arguments": []
+}

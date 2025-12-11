@@ -1,0 +1,49 @@
+{
+  "name": "edit_lnk",
+  "version": "1.0",
+  "command_name": "edit_lnk",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/edit_lnk",
+  "help": "Edit properties of a LNK file",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "edit_lnk.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "edit_lnk.x86.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "lnk",
+      "desc": "Path to the .lnk file",
+      "type": "wstring",
+      "optional": false
+    },
+    {
+      "name": "target",
+      "desc": "Target path of the shortcut",
+      "type": "wstring",
+      "optional": true
+    },
+    {
+      "name": "dir",
+      "desc": "The working directory",
+      "type": "wstring",
+      "optional": true
+    },
+    {
+      "name": "args",
+      "desc": "Command line args passed to the target",
+      "type": "wstring",
+      "optional": true
+    }
+  ]
+}

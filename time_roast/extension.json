@@ -1,0 +1,31 @@
+{
+  "name": "time_roast",
+  "version": "1.0",
+  "command_name": "time_roast",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/time_roast",
+  "help": "Legacy MS-SNTP auth abuse. Based on https://github.com/SecuraBV/Timeroast",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "time_roast.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "time_roast.x86.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "dcAddr",
+      "desc": "DC IP",
+      "type": "string",
+      "optional": false
+    }
+  ]
+}
