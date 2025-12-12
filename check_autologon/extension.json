@@ -1,0 +1,24 @@
+{
+  "name": "check_autologon",
+  "version": "1.0",
+  "command_name": "check_autologon",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/check_autologon",
+  "help": "Checks the registry for AutoAdminLogon and Default* in Winlogon",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "check_autologon.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "check_autologon.x86.o"
+    }
+  ],
+  "arguments": []
+}

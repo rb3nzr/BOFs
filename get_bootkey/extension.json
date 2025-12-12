@@ -1,0 +1,24 @@
+{
+  "name": "get_bootkey",
+  "version": "1.0",
+  "command_name": "get_bootkey",
+  "extension_author": "rb3nzr",
+  "original_author": "rb3nzr",
+  "repo_url": "github.com/rb3nzr/BOFs/get_bootkey",
+  "help": "Dump and compute the boot key used to decrypt SAM and LSA secrets",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "get_bootkey.x64.o"
+    },
+    {
+      "os": "windows",
+      "arch": "368",
+      "path": "get_bootkey.x86.o"
+    }
+  ],
+  "arguments": []
+}
